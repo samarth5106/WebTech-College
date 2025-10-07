@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="prac5A_Employee.css"?>
+<!DOCTYPE employees [
+  <!ELEMENT employees (employee+)>
+  <!ELEMENT employee (id, name, department, designation, email, salary)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT department (#PCDATA)>
+  <!ELEMENT designation (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT salary (#PCDATA)>
+]>
+<employees>
+  <employee>
+    <id>101</id>
+    <name> Vinod Kumar</name>
+    <department>IT</department>
+    <designation>Developer</designation>
+    <email>vinod@it.com</email>
+    <salary>Rs50000 only</salary>
+  </employee>
+
+  <employee>
+  <id>102</id>
+  <name>Karan Sharma</name>
+  <department>IT</department>
+  <designation>Developer</designation>
+  <email>karan@it.com</email>
+  <salary>Rs50000 only</salary>
+  </employee>
+
+  <employee>
+  <id>104</id>
+<name> Mayank Bhandari</name>
+<department>Talent Aquisition</department>
+<designation> Assistant Manager</designation>
+<email>mayank@ta.com</email>
+<salary>Rs60000 only</salary>
+
+  </employee>
+  <employee>
+  <id>105</id>
+  <name>Monika Purohit</name>
+  <department>Finance</department>
+  <designation>Finance Manager</designation>
+  <email>monika@fin.com</email>
+  <salary>Rs50000 only</salary>
+  </employee>
+
+  <employee>
+    <id>106</id>
+    <name>Riya Thareja</name>
+    <department>HR</department>
+    <designation>Manager</designation>
+    <email>riya@hr.com</email>
+    <salary>Rs60000 only</salary>
+  </employee>
+  
+</employees>

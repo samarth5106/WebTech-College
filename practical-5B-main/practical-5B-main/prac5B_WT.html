@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Data</title>
+  <style>
+    body {
+      font-family: Trebuchet MS;
+      margin: 20px;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: rgb(121, 190, 202);
+      padding: 20px;
+      border: 1px solid #2e2020;
+      border-radius: 8px;
+    }
+    
+    h1 {
+        text-decoration: underline;
+      text-align: center;
+      color: #111010;
+    }
+    
+    .student-data {
+      margin-top: 20px;
+    }
+    
+    .student-data p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    
+    .label {
+      font-weight: bold;
+      color: #161414;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Second Student Information</h1>
+    <div id="result" class="student-data">
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <script>
+    function getSecondStudent() {
+      fetch('p5.xml')
+        .then(response => response.text())
+        .then(data => {
+       
+          let parser = new DOMParser();
+          let xmlDoc = parser.parseFromString(data, "text/xml");
+          
+          
+          let students = xmlDoc.getElementsByTagName("student");
+          
+          let student2 = students[1];
+          let id = student2.getElementsByTagName("Registration-Id")[0].textContent;
+          let name = student2.getElementsByTagName("Name")[0].textContent;
+          let dept = student2.getElementsByTagName("department")[0].textContent;
+          let email = student2.getElementsByTagName("email")[0].textContent;
+          
+    
+          let html = '';
+          html += '<p><span class="label">Registration ID:</span> ' + id + '</p>';
+          html += '<p><span class="label">Name:</span> ' + name + '</p>';
+          html += '<p><span class="label">Department:</span> ' + dept + '</p>';
+          html += '<p><span class="label">Email:</span> ' + email + '</p>';
+          
+          document.getElementById('result').innerHTML = html;
+        })
+        .catch(error => {
+          document.getElementById('result').innerHTML = '<p>Error loading data</p>';
+        });
+    }
+    window.onload = function() {
+      getSecondStudent();
+    };
+  </script>
+</body>
+</html>
