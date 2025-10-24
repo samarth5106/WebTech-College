@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="prac7.css">
+</head>
+<body>
+    <div id="heading">
+        <h1> Calculator </h1>
+    </div>
+
+   <div id="container">
+
+     <div id="bar"> 
+        <input type="text" id="display" readonly>
+    </div>
+    <br><hr>
+
+    <div id="number">
+        <button id="one" class="myclass" onclick="updatedisplay(1)"> 1 </button>
+        <button id="two" class="myclass" onclick="updatedisplay(2)"> 2 </button>
+        <button id="three" class="myclass" onclick="updatedisplay(3)"> 3 </button>
+        <button id="four" class="myclass" onclick="updatedisplay(4)"> 4 </button>
+        <button id="five" class="myclass" onclick="updatedisplay(5)"> 5 </button>
+        <button id="six" class="myclass" onclick="updatedisplay(6)"> 6 </button>
+        <button id="seven" class="myclass" onclick="updatedisplay(7)"> 7 </button>
+        <button id="eight" class="myclass" onclick="updatedisplay(8)"> 8 </button>
+        <button id="nine" class="myclass" onclick="updatedisplay(9)"> 9 </button>
+        <button id="zero" class="myclass" onclick="updatedisplay(0)"> 0 </button>
+
+        
+    </div>
+    <div id="oprator">
+        <button id="add" class="opn" onclick="Addfn()"> + </button>
+        <button id="sub" class="opn" onclick="Subtractfn()"> - </button>
+        <button id="mul" class="opn" onclick="Multiplyfn()"> * </button>
+        <button id="div" class="opn" onclick="Dividefn()"> / </button>
+        <button id="eq" class="opn" onclick="resultfn()"> = </button>
+
+   </div>
+   <div>
+    <button id="refrsh" onclick="refreshfn()"> Refresh </button>
+   </div>
+</div>
+
+
+<script src="prac7A.js"></script>
+</body>
+</html>

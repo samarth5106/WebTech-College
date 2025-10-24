@@ -1,0 +1,88 @@
+body{
+   background-color: rgb(250, 255, 253);
+}
+#heading{
+    color:rgb(6, 75, 51);
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+    border: 4px solid black;
+    width:500px;
+    margin:20px auto;
+    border-radius: 19px;
+
+}   
+#container{
+    background-color: rgb(18, 83, 55);
+    border:2px solid black;
+    padding:9px 9px 9px 9px;
+    border-radius: 4%;
+    width:500px;
+    margin:0 auto;
+    text-align:center;
+}
+#display{
+    width:100%;
+    height:50px;
+    box-sizing:border-box;
+    text-align:right;
+    font-size:24px;
+    padding:5px;
+    border-radius: 15px;
+}
+#bar{
+    border: 2px solid black;
+    width:500px;
+    display: block;
+    margin:10px auto;
+    border-radius: 20px;
+    
+}
+#number{
+   
+}
+.myclass{
+    color:rgb(0, 0, 0);
+    background-color: 
+    rgb(255, 255, 255);
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    width:100px;
+    height:40px;
+    border:2px solid black;
+    border-radius: 11px;
+    margin:15px auto;
+    margin-left: 10px;
+
+}
+.opn{
+     color:rgb(0, 0, 0);
+    background-color: 
+    rgb(255, 255, 255);
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    width:100px;
+    height:40px;
+    border:2px solid black;
+    border-radius: 11px;
+    margin:15px auto;
+    margin-left: 10px;
+
+}
+#refrsh{
+    background-color: rgb(212, 18, 18);
+    color:white;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+     width:150px;
+    height:40px;
+    border:2px solid black;
+    border-radius: 11px;
+    margin:15px auto;
+    margin-left: 10px;
+}
