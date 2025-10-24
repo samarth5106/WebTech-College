@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student>
+    <Registration-Id>101</Registration-Id>
+    <Name>Brijesh Verma</Name>
+    <department>Computer Science</department>
+    <email>brijesh.verma@mit.edu</email>
+  </student>
+
+  <student>
+    <Registration-Id>102</Registration-Id>
+    <Name>Ankita Verma</Name>
+    <department>IT</department>
+    <email>ankita.verma@mit.edu</email>
+  </student>
+
+  <student>
+    <Registration-Id>103</Registration-Id>
+    <Name>Aman Mishra</Name>
+    <department>Mechanical</department>
+    <email>aman.mishra@mit.edu</email>
+  </student>
+
+  <student>
+    <Registration-Id>104</Registration-Id>
+    <Name>Shrutika Sipani</Name>
+    <department>Computer Technology</department>
+    <email>shrutika.sipani@mit.edu</email>
+  </student>
+</students>

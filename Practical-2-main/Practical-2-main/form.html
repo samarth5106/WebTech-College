@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application</title>
+</head>
+
+    <h1 id="heading"> <b>Scholarship Application Form</b></h1>
+    <body>
+    <div class="container">
+    <form action="/action.php">
+        
+            <br>
+
+            <label for="name">Enter First Name:</label>
+            <input type="text" placeholder="First Name" id="applicant" name="name"><br>
+            <br><label for="last">Enter Last Name:</label>
+            <input type="text" placeholder="Last Name" id="last" name="last"><br>
+            <br><label for="edu">Select your current Education level:</label>
+            <select name="level">
+                <option value="SSC">SSC</option>
+                <option value="HSC">HSC</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Under Graduate">Undergraduate</option>
+                <option value="Post Graduate">Post Graduate</option>
+            </select><br>
+            <br><label for="exam">Select the last exam you gave:</label>
+            <select name="exam">
+                <option value="SSC">SSC</option>
+                <option value="HSC">HSC</option>
+                <option value="Diploma">Diploma</option>
+                <option value="UG Semester">UG Semester</option>
+                <option value="PG Semester">PG Semester</option>
+            </select><br>
+
+            <br><label for="score">Enter the percentage obtained in the last exam you gave:</label>
+            <input type="number" step="any" id="score" result="score" placeholder="Percentage"><br>
+            <br><label for="imp_members"> Enter the number of Family members earning:</label>
+            <input type="number"id="imp_members" imp_mbr="imp_members" placeholder="Earning Members"><br>
+            <br><label for="siblings"> Enter the number of siblings you have:</label>
+            <input type="number" id="siblings" siblings="siblings" placeholder="Number of Siblings"><br>
+            <br><label for="disability">Are you physically disable:</label>
+            <input type="radio" id="Yes" name="disability" value="Yes">
+            <label for="Yes">Yes            </label>
+             <input type="radio" id="No" name="disability" value="No">
+            <label for="No">No</label><br>
+            
+            <br><label for="income">Select your annual income:</label>
+            <select name="income">
+                <option value="less than 1lakh">Less than 1 lakh</option>
+                <option value="less than 3lakh">Less than 3 Lakh</option>
+                <option value="B/w 3 to 8 lakh">Between 3 to 8 Lakh</option>
+                <option value="Above 8lakh">Above 8 Lakh</option>
+            </select><br>
+
+            <br><label for="info">Tell us about Yourself, Family, Hobby, Goals, Achievements, Future plans:</label>
+            <textarea name="about" id="info" rows="8" cols="50" placeholder="About Yourself"></textarea><br><br>
+            <button id="submit"> Submit </button>
+            
+    </form>
+    </div>
+</body>
+
+</html>

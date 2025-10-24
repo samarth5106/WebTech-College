@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Practical</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(157, 250, 250);
+    }
+    h1 {
+      color: rgb(20, 1, 185);
+      text-align: center;
+    }
+    h3 {
+      color: green;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JSON with JavaScript</h1>
+
+  <script>
+    const book1 = {
+             "name":"Introduction to C programming",
+            "author":"Denis Ritchie",
+            "edition":"2nd"
+    };
+    document.write("<h3>Book: " + book1.name + "</h3>");
+    document.write("<p>Author: " + book1.author + "</p>");
+    document.write("<p>Edition: "+book1.edition + "</p><hr>")
+
+    const book2 = {"name":"Javascript:The Good Parts",
+            "author":"Douglas Crockford",
+            "edition":"1st"};
+    document.write("<h3>Book: " + book2.name + "</h3>");
+    document.write("<p>Author: " + book2.author + "</p>");
+    document.write("<p>Edition: "+book2.edition + "</p><hr>")
+
+
+    const book3 = {"name":"Effective C++",
+            "author":"Scott Meyers",
+            "edition":"3rd"};
+    document.write("<h3>Book: " + book3.name + "</h3>");
+    document.write("<p>Author: " + book3.author + "</p>");
+    document.write("<p>Edition: "+book3.edition + "</p><hr>")
+
+
+    const book4 = {"name":"Java: The Complete Reference",
+            "author":"Herert Schildt",
+            "edition":"11th"};
+    document.write("<h3>Book: " + book4.name + "</h3>");
+    document.write("<p>Author: " + book4.author + "</p>");
+    document.write("<p>Edition: "+book4.edition + "</p><hr>")
+
+  </script>
+
+
+</body>
+</html>
+

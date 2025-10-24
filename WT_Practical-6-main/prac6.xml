@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalog>
+    <cd>
+        <title>Van Gogh: Masterpieces from the Kröller-Müller Museum</title>
+         <artist>Vincent van Gogh</artist>
+        <country>India</country>
+        <company>Tata CLIQ</company>
+        <price>15.23$</price>
+        <year>2023</year>
+       
+    </cd>
+    <cd>
+        <title>
+            Catalog of the objects of Indian art
+        </title>
+        <artist>Qi Baishi</artist>
+        <country>United Kingdom</country>
+        <company>Sotheby's</company>
+        <price>12.7$</price>
+        <year>1997</year>
+        
+    </cd>
+    <cd>
+        <title>
+            The Emily Fisher Landau Collection
+        </title>
+        <artist>Robin David</artist>
+        <country>United States</country>
+        <company>Forgotten Books</company>
+        <price>20$</price>
+        <year>2022</year>
+        
+    </cd>
+    <cd>
+        <title>
+            Whole Earth Catalog
+        </title>
+        <artist>Bob Dylan</artist>
+        <country>United States</country>
+        <company>Poretola Institute</company>
+        <price>150$</price>
+        <year>1968</year>
+        
+    </cd>
+    <cd>
+        <title>
+            Catalog of the Collection of Works of Antique Art
+        </title>
+        <artist>David Bowie</artist>
+        <country>United sTATES</country>
+        <company>Warner Chapelli Music</company>
+        <price>200$</price>
+        <year>2015</year>
+        
+    </cd>
+</Catalog>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WT Practical-6</title>
+  <style>
+    body {
+      font-family: Garamond;
+      background: linear-gradient(to right, #19b6bb, #0b515e);
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #f3f5f4;
+      margin-bottom: 20px;
+    }
+    button {
+        font-weight: bold;
+      display: block;
+      margin: 0 auto 20px auto;
+      padding: 10px 20px;
+      background: #105888;
+      color: white;
+      border: 2px black ;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #4597ce;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 90%;
+      background: rgb(231, 229, 229);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    th, td {
+      border: 1px solid #2e2c2c;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #1b354e;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <h1>CD Catalog Display</h1>
+  <hr>
+  <button onclick="showXMLdata()">Show Catalog</button>
+  <div id="catalog_table"></div>
+
+  <script>
+    function showXMLdata() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+          cdDetails(this);
+        }
+      };
+      xhttp.open("GET", "prac6.xml", true);
+      xhttp.send();
+    }
+
+    function cdDetails(xml) {
+      const xmlDoc = xml.responseXML;
+      const cds = xmlDoc.getElementsByTagName("cd");
+      let table = "<table><tr><th>Title</th><th>Artist</th><th>Country</th><th>Company</th><th>Price</th><th>Year</th></tr>";
+
+      for (let i = 0; i < cds.length; i++) {
+        table += "<tr>" +
+          "<td>" + cds[i].getElementsByTagName("title")[0].textContent.trim() + "</td>" +
+          "<td>" + cds[i].getElementsByTagName("artist")[0].textContent.trim() + "</td>" +
+          "<td>" + cds[i].getElementsByTagName("country")[0].textContent.trim() + "</td>" +
+          "<td>" + cds[i].getElementsByTagName("company")[0].textContent.trim() + "</td>" +
+          "<td>" + cds[i].getElementsByTagName("price")[0].textContent.trim() + "</td>" +
+          "<td>" + cds[i].getElementsByTagName("year")[0].textContent.trim() + "</td>" +
+          "</tr>";
+      }
+      table += "</table>";
+      document.getElementById("catalog_table").innerHTML = table;
+    }
+  </script>
+</body>
+</html>
