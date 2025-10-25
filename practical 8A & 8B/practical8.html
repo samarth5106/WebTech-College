@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 8</title>
+    <link rel="stylesheet" href="practical8.css">
+</head>
+<body>
+    <div id="head">
+        <h1>Demonstration of Conditional Statements, Types of Loops using Functions</h1>
+    </div>
+
+    <br><hr>
+
+    <div class="main-section">
+
+        <div class="left-section">
+            <button onclick="loops()" class="loop-parent">Loops</button>
+            
+            <div id="loopButtons">
+                <button onclick="forl()" class="Lchild">For Loop</button><br><br>
+                <button onclick="whl()" class="Lchild">While Loop</button><br><br>
+                <button onclick="dowhl()" class="Lchild">Do...While Loop</button>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <button onclick="Conditional()" class="cond-parent">Conditional Statements</button>
+       
+            <div id="condButtons">
+                <button class="cchild">If</button><br><br>
+                <button class="cchild">Else</button><br><br>
+                <button class="cchild">Else...if Nested</button><br><br>
+                <button onclick="game()" id="strt">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="practical8.js"></script>
+</body>
+</html>
